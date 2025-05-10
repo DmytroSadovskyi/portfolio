@@ -110,7 +110,7 @@ export const About = () => {
                       className="flex flex-col items-center"
                     >
                       {tech?.icon}
-                      <span className="text-sm text-gray-300 mt-2">
+                      <span className="text-sm text-gray-300 mt-2 text-center">
                         {tech?.name}
                       </span>
                     </motion.div>

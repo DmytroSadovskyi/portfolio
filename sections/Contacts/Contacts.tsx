@@ -23,7 +23,7 @@ export const Contacts = () => {
           Get in Touch
         </motion.h2>
         <Card className="max-w-lg mx-auto bg-gray-800/80 backdrop-blur-sm border border-blue-500/20 py-6">
-          <CardContent className="pt-6">
+          <CardContent>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -101,7 +101,12 @@ export const Contacts = () => {
             <FaTelegram className="text-2xl hover:text-blue-400 transition" />
           </a>
 
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://drive.google.com/file/d/1cAfmCiApgKPlaUCdq7l7Dr9HssBDWqs_/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-400 transition"
+          >
             My CV
           </a>
         </motion.div>

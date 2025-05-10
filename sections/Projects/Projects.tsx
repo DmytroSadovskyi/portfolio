@@ -7,33 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { BsLightningCharge, BsGithub } from 'react-icons/bs';
 
-import consultantImage from '../../public/images/stepanenko.jpg';
-import psychologistImage from '../../public/images/klympus.jpg';
-import agroImage from '../../public/images/agrovubir.jpg';
-
-const projects = [
-  {
-    title: 'Agrovubir.ua',
-    description:
-      'B2B platform using Next.js, Node.js, and PostgreSQL that connects farmers with suppliers',
-    image: agroImage,
-    link: 'https://agro-vubir.com.ua/',
-  },
-  {
-    title: 'Career consultations',
-    description: 'Personal website for career consultant Julia Stepanenko',
-    image: consultantImage,
-    gitHub: 'https://github.com/SoftRyzen-internship/career-consultant',
-    link: 'https://career-consultations.vercel.app/',
-  },
-  {
-    title: 'Psychologist Iryna Klimpus',
-    description: 'Personal website for psychologist Iryna Klimpus',
-    image: psychologistImage,
-    gitHub: 'https://github.com/SoftRyzen-internship/psychologist-klimpus',
-    link: 'https://therapybyirena.vercel.app/',
-  },
-];
+import { projects } from '@/projects';
 
 export const Projects = () => {
   return (
@@ -57,8 +31,9 @@ export const Projects = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
+              className="flex"
             >
-              <Card className="bg-gray-800/80 backdrop-blur-sm border border-blue-500/20 hover:shadow-blue-500/30 transition pb-6">
+              <Card className="flex flex-col h-full w-full bg-gray-800/80 backdrop-blur-sm border border-blue-500/20 hover:shadow-blue-500/30 transition pb-6">
                 <div className="relative w-full">
                   <Image
                     src={project.image}
@@ -73,30 +48,57 @@ export const Projects = () => {
                     {project.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-sm mb-4 text-gray-300">
+                <CardContent className="flex flex-col flex-grow justify-between">
+                  <div className="h-[90px] overflow-hidden mb-4 text-sm text-gray-300">
                     {project.description}
-                  </p>
-                  <Button
-                    variant="link"
-                    asChild
-                    className="p-0 text-blue-400 hover:text-purple-400"
-                  >
-                    <Link href={project.link}>
-                      <BsLightningCharge />
-                    </Link>
-                  </Button>
-                  {project.gitHub && (
+                  </div>
+
+                  <div className="mb-2">
+                    <p className="text-lg mb-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                      Technologies
+                    </p>
+                    <ul className="flex gap-2 flex-wrap text-sm text-gray-200">
+                      {project.technologies.map(t => (
+                        <li
+                          key={t.name}
+                          className="bg-blue-900/40 px-2 py-1 rounded"
+                        >
+                          {t.name}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="flex gap-2 mt-auto">
                     <Button
                       variant="link"
                       asChild
-                      className="p-0 text-blue-400 hover:text-purple-400"
+                      className="px-0 text-blue-400 hover:text-purple-400"
                     >
-                      <Link href={project.gitHub}>
-                        <BsGithub />
+                      <Link
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <BsLightningCharge />
                       </Link>
                     </Button>
-                  )}
+                    {project.gitHub && (
+                      <Button
+                        variant="link"
+                        asChild
+                        className="px-0 text-blue-400 hover:text-purple-400"
+                      >
+                        <Link
+                          href={project.gitHub}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <BsGithub />
+                        </Link>
+                      </Button>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             </motion.div>
