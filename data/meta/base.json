@@ -1,10 +1,10 @@
 {
-  "title": "Dmytro Sadovskyi Portfolio",
+  "title": "Dmytro Sadovskyi's Portfolio",
   "description": "Full Stack Developer Portfolio showcasing innovative web applications built with Next.js, TypeScript, and modern technologies.",
   "keywords": "web developer, fullstack developer, Dmytro Sadovskyi, frontend developer, backend developer",
   "manifest": "/meta/site.webmanifest",
   "twitter": {
-    "title": "Dmytro Sadovskyi Portfolio",
+    "title": "Dmytro Sadovskyi's Portfolio",
     "card": "summary_large_image",
     "description": "Full Stack Developer Portfolio showcasing innovative web applications built with Next.js, TypeScript, and modern technologies.",
     "images": [
