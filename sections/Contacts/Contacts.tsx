@@ -22,7 +22,7 @@ export const Contacts = () => {
         >
           Get in Touch
         </motion.h2>
-        <Card className="max-w-lg mx-auto bg-gray-800/80 backdrop-blur-sm border border-blue-500/20">
+        <Card className="max-w-lg mx-auto bg-gray-800/80 backdrop-blur-sm border border-blue-500/20 py-6">
           <CardContent className="pt-6">
             <motion.div
               initial={{ opacity: 0, y: 50 }}

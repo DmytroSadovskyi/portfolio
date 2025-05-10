@@ -55,7 +55,7 @@ export const About = () => {
         >
           About Me
         </motion.h2>
-        <Card className="max-w-5xl mx-auto bg-gray-800/80 backdrop-blur-sm border border-blue-500/20">
+        <Card className="max-w-5xl mx-auto bg-gray-800/80 backdrop-blur-sm border border-blue-500/20 py-6">
           <CardContent className="py-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <motion.div
@@ -80,7 +80,7 @@ export const About = () => {
                   Crafting Scalable Web Solutions
                 </h3>
                 <p className="text-base md:text-lg mb-4 text-gray-300">
-                  I`m a Full Stack Developer with over 1+ year of experience
+                  I`m a Full Stack Developer with over 1 year of experience
                   building robust, user-focused web applications. My passion
                   lies in leveraging{' '}
                   <span className="text-blue-400">Next.js</span>,{' '}

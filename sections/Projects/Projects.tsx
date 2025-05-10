@@ -7,25 +7,29 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { BsLightningCharge, BsGithub } from 'react-icons/bs';
 
+import consultantImage from '../../public/images/stepanenko.jpg';
+import psychologistImage from '../../public/images/klympus.jpg';
+import agroImage from '../../public/images/agrovubir.jpg';
+
 const projects = [
   {
     title: 'Agrovubir.ua',
     description:
       'B2B platform using Next.js, Node.js, and PostgreSQL that connects farmers with suppliers',
-    image: 'https://via.placeholder.com/600x400',
+    image: agroImage,
     link: 'https://agro-vubir.com.ua/',
   },
   {
     title: 'Career consultations',
     description: 'Personal website for career consultant Julia Stepanenko',
-    image: 'https://via.placeholder.com/600x400',
+    image: consultantImage,
     gitHub: 'https://github.com/SoftRyzen-internship/career-consultant',
     link: 'https://career-consultations.vercel.app/',
   },
   {
     title: 'Psychologist Iryna Klimpus',
     description: 'Personal website for psychologist Iryna Klimpus',
-    image: 'https://via.placeholder.com/600x400',
+    image: psychologistImage,
     gitHub: 'https://github.com/SoftRyzen-internship/psychologist-klimpus',
     link: 'https://therapybyirena.vercel.app/',
   },
@@ -54,13 +58,14 @@ export const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <Card className="bg-gray-800/80 backdrop-blur-sm border border-blue-500/20 hover:shadow-blue-500/30 transition">
-                <div className="relative w-full h-48">
+              <Card className="bg-gray-800/80 backdrop-blur-sm border border-blue-500/20 hover:shadow-blue-500/30 transition pb-6">
+                <div className="relative w-full">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    fill
                     className="bg-cover rounded-t-lg"
+                    width={600}
+                    height={400}
                   />
                 </div>
                 <CardHeader>
