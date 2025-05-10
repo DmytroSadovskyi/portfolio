@@ -97,6 +97,15 @@ export const About = () => {
                   <span className="text-blue-400">PostgreSQL</span>, I thrive on
                   solving complex challenges.
                 </p>
+                <p className="text-base md:text-lg mb-6 text-gray-300">
+                  Additionally, I specialize in{' '}
+                  <span className="text-blue-400">SEO optimization</span>,
+                  enhancing web visibility with techniques like keyword
+                  optimization, meta tag management, and site speed
+                  improvements. Using tools like Google Analytics and Search
+                  Console, I ensure applications rank higher and attract more
+                  organic traffic.
+                </p>
                 <h4 className="text-lg font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
                   My Core Tech Stack
                 </h4>
