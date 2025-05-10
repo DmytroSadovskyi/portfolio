@@ -49,7 +49,7 @@ export const Projects = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-col flex-grow justify-between">
-                  <div className="h-[90px] overflow-hidden mb-4 text-sm text-gray-300">
+                  <div className="h-[70px] overflow-hidden mb-2 text-sm text-gray-300">
                     {project.description}
                   </div>
 
