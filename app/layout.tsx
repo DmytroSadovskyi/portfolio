@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import metaInfo from '@/data/meta/base.json';
 import './globals.css';
 
 const geistSans = Geist({
@@ -12,9 +13,32 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;
+
+const {
+  title,
+  description,
+  keywords,
+  manifest,
+  twitter,
+  openGraph,
+  icons,
+  robots,
+} = metaInfo;
+
 export const metadata: Metadata = {
-  title: 'Dmytro Sadovskyi',
-  description: 'Portfolio site',
+  metadataBase: new URL(baseUrl),
+  title,
+  description,
+  alternates: {
+    canonical: baseUrl,
+  },
+  manifest,
+  keywords,
+  twitter,
+  openGraph: { ...openGraph, url: `${baseUrl}` },
+  icons,
+  robots,
 };
 
 export default function RootLayout({
