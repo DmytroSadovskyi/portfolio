@@ -27,7 +27,7 @@ export const Header = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-blue-500/20"
+        className="fixed w-full bg-gray-900/30 backdrop-blur-md z-50 border-b border-blue-500/20"
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link

@@ -9,7 +9,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-[url(/images/5166950.jpg)] bg-cover bg-center"
+      className="bg-gradient-to-br from-gray-950 via-blue-900/50 to-purple-900/50 min-h-screen flex items-center justify-center bg-[url(/images/5166950.jpg)] bg-cover bg-center"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
