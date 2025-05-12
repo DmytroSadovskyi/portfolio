@@ -9,6 +9,9 @@ export const projects = [
     description: 'B2B platform that connects farmers with suppliers',
     image: agroImage,
     link: 'https://agro-vubir.com.ua/',
+    type: 'Team commercial project',
+    achievements: [{}, {}, {}],
+
     technologies: [
       {
         name: 'React',
@@ -27,6 +30,8 @@ export const projects = [
     image: consultantImage,
     gitHub: 'https://github.com/SoftRyzen-internship/career-consultant',
     link: 'https://career-consultations.vercel.app/',
+    type: 'Team commercial project',
+    achievements: [{ name: '' }, { name: '' }, { name: '' }],
     technologies: [
       {
         name: 'React',
@@ -42,6 +47,8 @@ export const projects = [
     image: psychologistImage,
     gitHub: 'https://github.com/SoftRyzen-internship/psychologist-klimpus',
     link: 'https://therapybyirena.vercel.app/',
+    type: 'Team commercial project',
+    achievements: [{ name: '' }, { name: '' }, { name: '' }],
     technologies: [
       {
         name: 'React',
@@ -58,6 +65,8 @@ export const projects = [
     image: carRentalImage,
     gitHub: 'https://github.com/DmytroSadovskyi/car-rental-service',
     link: 'https://dmytrosadovskyi.github.io/car-rental-service',
+    type: 'Personal project',
+    achievements: [{ name: '' }, { name: '' }, { name: '' }],
     technologies: [
       {
         name: 'React',

@@ -52,7 +52,28 @@ export const Projects = () => {
                   <div className="h-[70px] overflow-hidden mb-2 text-sm text-gray-300">
                     {project.description}
                   </div>
-
+                  <div className="mb-2">
+                    <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                      Project Type
+                    </p>
+                    <p className="text-sm text-gray-200">
+                      {project.type || 'N/A'}
+                    </p>
+                  </div>
+                  <div className="mb-2">
+                    <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                      Key Achievements
+                    </p>
+                    {/* <ul className="text-sm text-gray-200 list-disc list-inside">
+                      {project.achievements ? (
+                        project.achievements.map((achievement, idx) => (
+                          <li key={idx}>{achievement.name}</li>
+                        ))
+                      ) : (
+                        <li>N/A</li>
+                      )}
+                    </ul> */}
+                  </div>
                   <div className="mb-2">
                     <p className="text-lg mb-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
                       Technologies

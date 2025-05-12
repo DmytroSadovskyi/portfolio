@@ -55,14 +55,14 @@ export const About = () => {
         >
           About Me
         </motion.h2>
-        <Card className="max-w-5xl mx-auto bg-gray-800/80 backdrop-blur-sm border border-blue-500/20 py-6">
+        <Card className=" mx-auto bg-gray-800/80 backdrop-blur-sm border border-blue-500/20 py-6">
           <CardContent className="py-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="relative w-64 h-64 mx-auto"
+                className="relative w-64 h-64 mx-auto xl:w-[450px] xl:h-[450px]"
               >
                 <Image
                   src={image}
@@ -72,7 +72,7 @@ export const About = () => {
                 />
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
