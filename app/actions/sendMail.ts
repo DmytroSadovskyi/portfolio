@@ -1,7 +1,7 @@
 'use server';
 
 import nodemailer from 'nodemailer';
-import { FormData } from '@/sections/Contact';
+import { FormData } from '@/types';
 
 export async function sendEmail(formData: FormData) {
   const name = formData.name;
