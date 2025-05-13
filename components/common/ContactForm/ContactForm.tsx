@@ -40,6 +40,7 @@ export const ContactForm = () => {
         </label>
         <Input
           id="name"
+          placeholder="John Doe"
           {...register('name', {
             required: { value: true, message: 'Name is required' },
             minLength: {
@@ -50,7 +51,7 @@ export const ContactForm = () => {
           className="bg-gray-700/80 border-blue-500/20 text-gray-200"
         />
         {errors.name && (
-          <span className="text-red-500 text-sm absolute right-0">
+          <span className="text-red-400 text-xs absolute right-0">
             {errors?.name?.message}
           </span>
         )}
@@ -62,6 +63,7 @@ export const ContactForm = () => {
         <Input
           id="email"
           type="email"
+          placeholder="johndoe@example.com"
           {...register('email', {
             required: { value: true, message: 'Email is required' },
             pattern: {
@@ -72,7 +74,7 @@ export const ContactForm = () => {
           className="bg-gray-700/80 border-blue-500/20 text-gray-200"
         />
         {errors.email && (
-          <span className="text-red-500 text-sm absolute right-0">
+          <span className="text-red-400 text-xs absolute right-0">
             {errors.email.message}
           </span>
         )}
@@ -83,6 +85,7 @@ export const ContactForm = () => {
         </label>
         <Textarea
           id="message"
+          placeholder="Your message"
           className="bg-gray-700/80 border-blue-500/20 text-gray-200 resize-none"
           rows={5}
           {...register('message', {
@@ -94,7 +97,7 @@ export const ContactForm = () => {
           })}
         />
         {errors.message && (
-          <span className="text-red-500 text-sm absolute right-0">
+          <span className="text-red-400 text-xs absolute right-0">
             {errors.message.message}
           </span>
         )}

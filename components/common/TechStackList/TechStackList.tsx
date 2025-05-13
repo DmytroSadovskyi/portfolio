@@ -1,4 +1,4 @@
-import { TechStackItem } from '../TechStackItem';
+import { TechStackItem } from '@/components/common/TechStackItem';
 import { TechStackListProps } from './props';
 
 export const TechStackList = ({ items }: TechStackListProps) => {

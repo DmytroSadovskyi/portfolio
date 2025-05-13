@@ -1,4 +1,4 @@
-import { Project } from '../Project/Project';
+import { Project } from '@/components/common/Project';
 import { ProjectsListProps } from './props';
 
 export const ProjectsList = ({ projects }: ProjectsListProps) => {

@@ -15,7 +15,7 @@ export const projects: Project[] = [
     responsibilities: [
       'developing UI',
       'developing backend',
-      'developing and maintaining the database',
+      'developing database',
       'SEO optimization',
     ],
 
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: 'Psychologist Iryna Klimpus',
+    title: 'Iryna Klimpus',
     description: 'Personal website for clinic psychologist Iryna Klimpus',
     image: psychologistImage,
     gitHub: 'https://github.com/SoftRyzen-internship/psychologist-klimpus',
