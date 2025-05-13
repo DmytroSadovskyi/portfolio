@@ -58,16 +58,17 @@ export default function RootLayout({
           duration={3000}
           toastOptions={{
             unstyled: true,
-            className:
-              'bg-white text-black rounded-lg flex items-center gap-4 p-4 shadow-lg',
             classNames: {
-              error: 'bg-red-400',
-              success: 'text-green-400',
-              warning: 'text-yellow-400',
-              info: 'bg-blue-400',
+              toast:
+                'sm:fixed sm:top-4 sm:left-1/2 sm:-translate-x-1/2 sm:w-[90%] sm:max-w-sm rounded-lg p-4 shadow-lg flex items-center gap-2 text-white',
+              error: 'bg-red-500',
+              success: 'bg-green-500',
+              warning: 'bg-yellow-400 text-black',
+              info: 'bg-blue-500',
             },
           }}
         />
+
         {children}
       </body>
     </html>

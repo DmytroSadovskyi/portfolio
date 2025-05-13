@@ -3,14 +3,21 @@ import psychologistImage from '@/public/images/klympus.jpg';
 import agroImage from '@/public/images/agrovubir.jpg';
 import carRentalImage from '@/public/images/car-rental.jpg';
 
-export const projects = [
+import { Project } from './types';
+
+export const projects: Project[] = [
   {
     title: 'Agrovubir.ua',
     description: 'B2B platform that connects farmers with suppliers',
     image: agroImage,
     link: 'https://agro-vubir.com.ua/',
-    type: 'Team commercial project',
-    achievements: [{}, {}, {}],
+    type: 'Commercial team project',
+    responsibilities: [
+      'developing ui',
+      'developing backend',
+      'developing and maintaining the database',
+      'SEO optimization',
+    ],
 
     technologies: [
       {
@@ -30,8 +37,13 @@ export const projects = [
     image: consultantImage,
     gitHub: 'https://github.com/SoftRyzen-internship/career-consultant',
     link: 'https://career-consultations.vercel.app/',
-    type: 'Team commercial project',
-    achievements: [{ name: '' }, { name: '' }, { name: '' }],
+    type: 'Commercial team project',
+    responsibilities: [
+      'team lead',
+      'creating frontend components',
+      'setting up Sanity CMS',
+      'creating schemas for Sanity CMS',
+    ],
     technologies: [
       {
         name: 'React',
@@ -47,8 +59,12 @@ export const projects = [
     image: psychologistImage,
     gitHub: 'https://github.com/SoftRyzen-internship/psychologist-klimpus',
     link: 'https://therapybyirena.vercel.app/',
-    type: 'Team commercial project',
-    achievements: [{ name: '' }, { name: '' }, { name: '' }],
+    type: 'Commercial team project',
+    responsibilities: [
+      'creating frontend components',
+      'setting up DatoCMS',
+      'creating schemas for DatoCMS',
+    ],
     technologies: [
       {
         name: 'React',
@@ -66,7 +82,7 @@ export const projects = [
     gitHub: 'https://github.com/DmytroSadovskyi/car-rental-service',
     link: 'https://dmytrosadovskyi.github.io/car-rental-service',
     type: 'Personal project',
-    achievements: [{ name: '' }, { name: '' }, { name: '' }],
+
     technologies: [
       {
         name: 'React',

@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
+import { TechStackList } from '@/components/common/TechStackList';
 import {
   SiMongodb,
   SiPostgresql,
@@ -109,22 +110,7 @@ export const About = () => {
                 <h4 className="text-lg font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
                   My Core Tech Stack
                 </h4>
-                <div className="grid grid-cols-3 gap-4">
-                  {techStackItems.map((tech, index) => (
-                    <motion.div
-                      key={tech?.name}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: index * 0.1 }}
-                      className="flex flex-col items-center"
-                    >
-                      {tech?.icon}
-                      <span className="text-sm text-gray-300 mt-2 text-center">
-                        {tech?.name}
-                      </span>
-                    </motion.div>
-                  ))}
-                </div>
+                <TechStackList items={techStackItems} />
               </motion.div>
             </div>
           </CardContent>

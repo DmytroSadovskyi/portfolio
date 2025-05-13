@@ -1,7 +1,7 @@
 import { Footer } from '@/layout/footer';
 import { Header } from '@/layout/header';
 import { About } from '@/sections/About';
-import { Contacts } from '@/sections/Contacts';
+import { Contact } from '@/sections/Contact';
 import { Hero } from '@/sections/Hero';
 import { Projects } from '@/sections/Projects';
 
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
-      <Contacts />
+      <Contact />
       <Footer />
     </>
   );
