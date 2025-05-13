@@ -13,7 +13,7 @@ export const projects: Project[] = [
     link: 'https://agro-vubir.com.ua/',
     type: 'Commercial team project',
     responsibilities: [
-      'developing ui',
+      'developing UI',
       'developing backend',
       'developing and maintaining the database',
       'SEO optimization',
@@ -78,7 +78,7 @@ export const projects: Project[] = [
   {
     title: 'DreamCar Rental',
     description:
-      'Simply website where you can find a car for rent using different filters ',
+      'A simple website where you can find rental cars using various filters',
     image: carRentalImage,
     gitHub: 'https://github.com/DmytroSadovskyi/car-rental-service',
     link: 'https://dmytrosadovskyi.github.io/car-rental-service',

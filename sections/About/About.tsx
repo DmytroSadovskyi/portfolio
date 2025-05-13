@@ -81,7 +81,7 @@ export const About = () => {
                   Crafting Scalable Web Solutions
                 </h3>
                 <p className="text-base md:text-lg mb-4 text-gray-300">
-                  I`m a Full Stack Developer with over 1 year of experience
+                  I&apos;m a Full Stack Developer with over 1 year of experience
                   building robust, user-focused web applications. My passion
                   lies in leveraging{' '}
                   <span className="text-blue-400">Next.js</span>,{' '}
