@@ -40,9 +40,9 @@ export const projects: Project[] = [
     type: 'Commercial team project',
     responsibilities: [
       'team lead',
-      'creating frontend components',
       'setting up Sanity CMS',
       'creating schemas for Sanity CMS',
+      'SEO optimization',
     ],
     technologies: [
       {
@@ -64,6 +64,7 @@ export const projects: Project[] = [
       'creating frontend components',
       'setting up DatoCMS',
       'creating schemas for DatoCMS',
+      'implementing DatoCMS',
     ],
     technologies: [
       {
