@@ -1,7 +1,7 @@
-import consultantImage from '@/public/images//stepanenko.jpg';
-import psychologistImage from '@/public/images/klympus.jpg';
+import consultantImage from '@/public/images/stepanenko.jpg';
+import psychologistImage from '@/public/images/klimpus.jpg';
 import agroImage from '@/public/images/agrovubir.jpg';
-import carRentalImage from '@/public/images/car-rental.jpg';
+import carRentalImage from '@/public/images/rental.jpg';
 
 import { Project } from './types';
 
