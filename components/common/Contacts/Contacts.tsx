@@ -25,7 +25,7 @@ export const Contacts = () => {
         <FaTelegram className="text-2xl hover:text-blue-400 transition" />
       </a>
       <a
-        href="https://drive.google.com/file/d/1qiDvZwAlSjZhWeo4qtD1qK2lsJ_x-AiR/view?usp=sharing"
+        href="https://drive.google.com/file/d/1dppYl3b4bcRHTtlbveNqDZ_-QIFJ49_P/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-blue-400 transition"
